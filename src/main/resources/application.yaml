@@ -1,0 +1,18 @@
+#springboot的多环境配置，可以选择激活哪一个配置文件
+server:
+  port: 8081
+
+---
+server:
+  port: 8082
+spring:
+  profiles: dev
+---
+spring:
+  mvc:
+    date-format: dd-MM-yyyy
+
+  messages:
+    basename: i18n.login
+
+
